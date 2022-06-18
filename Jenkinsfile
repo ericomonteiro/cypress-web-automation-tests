@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage('build and test') {
       environment {
+        HOME = "."
         // we will be recording test results and video on Cypress dashboard
         // to record we need to set an environment variable
         // we can load the record key variable from credentials store
